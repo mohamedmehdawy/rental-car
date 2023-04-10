@@ -1,0 +1,23 @@
+:root {
+    /* main colors */
+    --main-first-color: #3C43ED;
+    --main-second-color: #ADF1D2;
+    --white-color: #f2f2f2;
+    
+    /* buttons color */
+    --btn-main-color: #F7F7F7;
+    --btn-main-hover-color: rgba(0,0,0,.1);
+
+    /* text colors */
+    --text-main-color: #2F3238;
+    --text-second-color: #888888;
+
+    /* font size */
+    --font-size--small: 13px;
+    --font-size--medium: 20px;
+    --font-size--large: 36px;
+    --font-size-x-large: 42px;
+
+    /* border radius */
+    --main-border-radius: 4px;
+}
