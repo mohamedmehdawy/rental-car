@@ -1,3 +1,4 @@
+/* Start Variables */
 :root {
     /* main colors */
     --main-first-color: #3C43ED;
@@ -20,4 +21,50 @@
 
     /* border radius */
     --main-border-radius: 4px;
+
+      /* font */
+      --header-main-font:'Epilogue', sans-serif;
+      --text-font:'DM Sans', sans-serif;
 }
+/* Start Global Rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--text-font);
+    color: var(--text-main-color);
+}
+/* Start Global Rules */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+      width: 1260px;
+    }
+  }
+/* End Global Rules */
