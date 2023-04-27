@@ -1,0 +1,18 @@
+@import url(../../../../../assets/style/main.css);
+.social-icons .social-icons-container menu{
+    display: flex;
+    gap: 10px;
+}
+.social-icons .social-icons-container menu li a{
+    background-color: rgb(247, 247, 247);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2F323866;
+    border-radius: 4px;
+}
+.social-icons .social-icons-container menu li a:hover{
+    background-color: rgb(0, 0, 0, 0.1);;
+}
