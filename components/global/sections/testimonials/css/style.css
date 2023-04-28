@@ -1,0 +1,125 @@
+@import url(../../../../../assets/style/main.css);
+@import url(../../../headers/section-header/css/style.css);
+@keyframes slide-move {
+  0% {
+    right: 40px;
+  }
+  50% {
+    right: 200px;
+  }
+  100% {
+    right: 40px;    
+  }
+}
+
+.testimonials{
+    padding: 15px;
+    background-image: url("../images/bg.jpeg");
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin: auto;
+}
+.testimonials .right-testimonials{
+    display: none;
+}
+/* Slider   */
+
+.slider{
+	overflow: hidden;
+    margin-top: 15px;
+}
+.slider .slide-content {
+	min-height: 175px;
+}
+.slider .slider-items .item{
+	display: none;
+}
+.slider .slider-items .item.active{
+	display: block;
+}
+.slider .slide-content .rating-star{
+	padding: 10px 0 20px;
+}
+.slider .slide-content .rating-star span{
+	color: #2F3238;
+}
+.slider .item:nth-child(2) .slide-content .rating-star span:last-child{
+	color: #e1e1e1;
+}
+.slider .slide-content .slide-text{
+	font-family: "DM Sans", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #555555;
+    margin: 0px 0px 25px 0px;
+    min-height: 105px;
+}
+.slider .slide-content .author-info>span{
+	display: block;
+}
+.slider .slide-content .author-info .name{
+	font-family: "DM Sans", Sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #3C43ED;
+    margin-bottom: 4px;
+}
+.slider .slide-content .author-info .position{
+	font-family: "DM Sans", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #888888;
+}
+.slider .slider-controls {
+	display: flex;
+	padding: 15px;
+	justify-content: center;
+	gap: 20px;
+}
+.slider-controls .left-slide,.slider-controls .right-slide{
+	height: 40px;
+	width: 40px;
+	background-color: #fff;
+	border-radius: 50%;
+	color:#222;
+	font-size: 20px;
+	cursor: pointer;
+	text-align: center;
+	line-height: 46px;
+	border: 1px solid #e1e1e1;
+	transition: 0.3s all ease;
+}
+.slider-controls .left-slide:hover,.slider-controls .right-slide:hover{
+	color: #FFFFFF;
+    background-color: #3C43ED;
+    border-color: #3C43ED;
+	box-shadow: 0px 0px 5px #888;
+}
+/* slider  */
+@media screen and (min-width:1024px) {
+    .testimonials{
+        max-width: 1260px;
+        padding: 50px 0 30px 0;
+        background-image: none;
+    }
+        .testimonials-container{
+        background-image: url("../images/bg.jpeg");
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-size: auto;
+        padding: 30px 15px;
+        position: relative;
+    }
+    .testimonials .left-testimonials{
+        width: 50%;
+    }
+    .testimonials .right-testimonials{
+        display: block;
+        position: absolute;
+        width: 460px;
+        bottom: 0;
+        right: 40px;
+        animation: slide-move 5s infinite ease-in-out;
+    }
+}
