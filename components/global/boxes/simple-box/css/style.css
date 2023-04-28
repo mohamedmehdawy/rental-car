@@ -1,0 +1,21 @@
+@import url(../../../../../assets/style/main.css);
+.simple-box .simple-box-container{
+    padding: 15px;
+}
+.simple-box .simple-box-container .top-box .box-image{
+    width: fit-content;
+    margin-bottom: 30px;
+}
+.simple-box .simple-box-container .box-title{
+    font-family: "Epilogue", Sans-serif;
+    font-size: 20px;
+    color: var(--text-main-color);
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.simple-box .simple-box-container .box-content{
+    color: var(--text-second-color);
+    margin-bottom: 20px;
+    font-family: "DM Sans", Sans-serif;
+}
