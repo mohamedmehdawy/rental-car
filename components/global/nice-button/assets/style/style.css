@@ -1,0 +1,43 @@
+.button-wrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 12px;
+    margin-left: 16px;
+}
+
+.btn-Service {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #FFF;
+    background-color: #3C43ED;
+    border-radius: 4px;
+    padding: 15px 40px 14px 40px;
+    overflow: hidden;
+    position: relative;
+    transition: all .5s linear;
+  
+}
+.btn-Service:before{
+    content: "";
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background-color: #000000;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-Service:hover:before{
+    top: 0;
+}
+.button-text>span>span {
+    position: relative;
+    transition: inherit;
+}
+.button-text>span>span {
+    z-index: 1;
+}
