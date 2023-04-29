@@ -1,0 +1,12 @@
+@import url(../../../../../assets/style/main.css);
+
+.simple-element{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: "DM Sans", Sans-serif;
+    font-size: 17px;
+    padding: 7px;
+    color: var(--text-main-color);
+    font-weight: 500;
+}
