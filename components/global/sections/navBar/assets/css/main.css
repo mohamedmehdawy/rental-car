@@ -1,0 +1,130 @@
+:root {
+    /* main colors */
+    --main-first-color: #3C43ED;
+    --main-second-color: #ADF1D2;
+    --white-color: #f2f2f2;
+
+    /* buttons color */
+    --btn-main-color: #F7F7F7;
+    --btn-main-hover-color: rgba(0, 0, 0, .1);
+
+    /* text colors */
+    --text-main-color: #2F3238;
+    --text-second-color: #888888;
+
+    /* font size */
+    --font-size--small: 13px;
+    --font-size--medium: 20px;
+    --font-size--large: 36px;
+    --font-size-x-large: 42px;
+
+    /* border radius */
+    --main-border-radius: 4px;
+
+    /* font */
+    --header-main-font: 'Epilogue', sans-serif;
+    --text-font: 'DM Sans', sans-serif;
+}
+
+nav {
+    background-color: var( --main-first-color);
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    color: #fff;
+    min-height: 120px;
+    --content-zoom: calc(120em * .01);
+}
+
+nav .left-item .menu,
+nav .right-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+nav .left-item .menu a,
+nav .right-item a {
+    display: block;
+    padding: 10px 8px;
+    color: var(--btn-main-color);
+    font-family: var(--text-font);
+    font-weight: 500;
+    font-size: 17px;
+    transition: all .4s ease-out;
+    -webkit-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    -ms-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+}
+
+nav .left-item .menu a ion-icon {
+    color: var(--main-second-color);
+}
+
+nav .left-item .menu a:hover {
+    color: var(--main-second-color);
+}
+
+.center-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.signin,
+.search,
+.btn-Book {
+    margin: auto 12px;
+}
+
+.btn-Book a.book {
+    background-color: var(--main-second-color);
+    color: var(--text-main-color) !important;
+    padding: 15px 36px;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.btn-Book a.book:hover {
+    background-color: var(--white-color);
+}
+
+.menu,
+.shopping {
+    display: none;
+}
+#menu-icon {
+    font-size: 28px;
+}
+
+#shop-icon {
+    font-size: 24px;
+}
+
+/* End Components */
+/* media */
+@media (max-width: 992px) {
+
+    nav .left-item,
+    nav .right-item {
+        display: none;
+    }
+
+    .menu,
+    .shopping {
+        display: flex;
+    }
+
+    .shopping {
+        justify-content: end;
+    }
+}

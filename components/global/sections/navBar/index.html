@@ -1,27 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>navbar</title>
-        <!-- styles -->
-        <link rel="styleheet" href="../../../../assets/style/main.css" />
-        <link ref="stylesheet" href="./assets/css/main.css" />
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>navbar</title>
+    <!-- Main CSS File -->
+    <link rel="stylesheet" type="text/css" href="../../../../assets/style/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
 
-    <body>
-        <!-- start navbar -->
-        <nav id="main-navbar">
+<body>
+    <!-- start navbar -->
+    <nav id="main-navbar">
+        <div class="menu">
+            <ion-icon name="menu-outline" id="menu-icon"></ion-icon>
+        </div>
+        <div class="left-item">
+            <ul class="menu">
+                <li><a href="home.html"><ion-icon name="home-outline" id="home-icon"></ion-icon></a></li>
+                <li><a href="#Elements">Elements</a></li>
+                <li><a href="#About Us">About Us</a></li>
+                <li><a href="#Rent">Rent A Car</a></li>
+                <li><a href="#Contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="center-item">
+            <div class="logo">
+                <img src="assets/images/Logo.png" alt="Logo" width="181" height="39">
+            </div>
+        </div>
+        <div class="right-item">
+            <div class="search">
+                <a href="#">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <span>Search</span>
+                </a>
+            </div>
+            <div class="signin">
+                <a href="#">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <span> Sign In</span>
+                </a>
+            </div>
+            <div class="btn-Book">
+                <a href="https://xstore.8theme.com/elementor/demos/rental-car/shop/" class="book">
+                    Book Now
+                </a>
+            </div>
+        </div>
+        <div class="shopping">
+            <ion-icon name="bag-outline" id="shop-icon"></ion-icon>
+        </div>
 
-        </nav>
-        <!-- end navbar -->
+    </nav>
+    <!-- end navbar -->
 
-        <!-- scripts -->
-        <!-- icons -->
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    </body>
+    <!-- scripts -->
+    <!-- icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
 
 </html>

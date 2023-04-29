@@ -1,3 +1,4 @@
+/* Start Variables */
 :root {
     /* main colors */
     --main-first-color: #3C43ED;
@@ -20,13 +21,53 @@
 
     /* border radius */
     --main-border-radius: 4px;
+
+      /* font */
+      --header-main-font:'Epilogue', sans-serif;
+      --text-font:'DM Sans', sans-serif;
 }
+
+/* Start Global Rules */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+      width: 1260px;
+    }
+  }
+/* End Global Rules */
+
 
 /* set and reset default values  */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--text-font);
+  color: var(--text-main-color);
 }
 a,li{
     text-decoration: none;
@@ -43,3 +84,4 @@ h1,h2,h3,h4,h5,h6{
 /* import website fonts */
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
