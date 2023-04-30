@@ -217,16 +217,29 @@ input[type="range"]::-moz-range-thumb {
     color: #2F3238;
     background-color: #ADF1D2;
 }
-.button-search:hover{
+
+.button-search:hover {
     color: #FFFFFF;
     background-color: #2F3238;
 }
-.button-content-wrapper{
-     display: flex;
+
+.button-content-wrapper {
+    display: flex;
     align-items: center;
     justify-content: center;
 }
-.button-search .button-icon{
+
+.button-search .button-icon {
     margin-left: 4px;
     padding-top: 6px;
+}
+
+@media only screen and (max-width: 768px) {
+    .product-filters {
+        grid-template-columns: 1fr;
+    }
+
+    .search-items {
+        grid-template-columns: auto;
+    }
 }
