@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" type="text/css" href="../../../../assets/style/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Car Search</title>
+</head>
+
+<body>
+    <section class="car-search">
+        <div class="container">
+            <form action="" class="product-filters">
+                <div class="search-items">
+                    <div class="dropdown">
+                        <div class="select">
+                            <span class="selected">Car Brand </span>
+                            <div class="caret"></div>
+                        </div>
+                        <ul class="menu">
+                            <li>honda</li>
+                            <li>infinity</li>
+                            <li>lexus</li>
+                            <li>mazda</li>
+                            <li>mercedes</li>
+                            <li>toyota</li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <div class="select">
+                            <span class="selected">Fuel Type </span>
+                            <div class="caret"></div>
+                        </div>
+                        <ul class="menu">
+                            <li>Diesel Fuel</li>
+                            <li>Electric</li>
+                            <li>Gasoline</li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <div class="select">
+                            <span class="selected">Price Range</span>
+                            <div class="caret"></div>
+                        </div>
+                        <div class="menu">
+                            <div class="padding-top-range">
+                                <div class="slider">
+                                    <div class="progress"></div>
+                                </div>
+                                <div class="range-input">
+                                    <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                                    <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                                </div>
+                                <div class="price-input">
+                                    <div class="field">
+                                        <span>Min</span>
+                                        <input type="number" class="input-min" value="2500">
+                                    </div>
+                                    <div class="field">
+                                        <span>Max</span>
+                                        <input type="number" class="input-max" value="7500">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="btn-search">
+                        <button class="button-search" role="button" type="submit">
+                            <span class="button-content-wrapper">
+                                <span class="button-text">
+                                    Find a Car
+                                </span>
+                                <span class="button-icon">
+                                    <ion-icon name="arrow-forward"></ion-icon>
+                                </span>
+
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- scripts -->
+    <script src="assets/script/main.js"></script>
+    <!-- icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
