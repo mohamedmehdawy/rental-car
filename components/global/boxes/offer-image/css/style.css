@@ -1,0 +1,25 @@
+@import url(../../../../../assets/style/main.css);
+.test{
+    display: flex;
+}
+.offer-image{
+    width: 50%;
+    height: auto;
+}
+.offer-image .offer-image-container{
+    background-image: url("../images/background.jpeg");
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+}
+@media screen and (max-width:768px) {
+    .offer-image{
+        display: none   ;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+    .offer-image .offer-image-container{
+        background-size: cover;
+    }
+}
