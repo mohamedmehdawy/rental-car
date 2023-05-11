@@ -1,0 +1,13 @@
+@import url("../../../../../assets/style/main.css");
+
+.simple-image-box .simple-image-box-container{
+    width:135px;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: all .2s linear;
+    margin: auto;
+}
+.simple-image-box .simple-image-box-container:hover{
+    filter:none;
+    opacity: 1;
+}
