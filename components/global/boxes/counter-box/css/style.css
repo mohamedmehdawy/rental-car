@@ -1,0 +1,24 @@
+@import url('../../../../../assets/style/main.css');
+.counter-box{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.counter-box .counter-box-img{
+    display: flex;
+}
+.counter-box-count{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 7px;
+}
+.counter-box-count h3{
+    font-family: "DM Sans", Sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+.counter-box-title{
+    margin-top: 10px;
+    color: var(--text-second-color);
+}
