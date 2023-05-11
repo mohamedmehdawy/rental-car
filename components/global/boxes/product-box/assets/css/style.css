@@ -1,0 +1,46 @@
+@import url(../../../../../../assets/style/main.css);
+.product-box {
+  width: 396.667px;
+  margin-right: 20px;
+  background-color:rgb(255, 255, 255);
+  border:1px solid #EBEBEB;
+  border-radius:4px;
+  overflow: hidden;
+  transition: all 0.1s;
+}
+.product-box:hover{
+    border-color:var( --main-first-color);
+}
+.product-box-container{
+    padding: 30px 40px;
+}
+.product-box-container .product-img{
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.product-box-container .product-details{
+    text-align: center;
+    line-height: 1.4;
+}
+.product-details .product-categories{
+    margin-bottom: 3px;
+}
+.product-details .product-price,
+.product-description p,
+.product-details .product-categories a{
+    color: var(--text-second-color);
+    font-size: 17px;
+}
+.product-details .product-title{
+    font-size: 1.12rem;
+    margin-bottom: 5px;
+}
+.product-details .product-rate {
+    color:#fdd835;
+}
+.product-details .product-price{
+    margin-bottom: 7px;
+}
+.product-details .product-description{
+    margin-bottom: 10px;
+}

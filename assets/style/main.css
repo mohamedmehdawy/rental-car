@@ -1,66 +1,71 @@
 /* Start Variables */
 :root {
-    /* main colors */
-    --main-first-color: #3C43ED;
-    --main-second-color: #ADF1D2;
-    --white-color: #f2f2f2;
-    
-    /* buttons color */
-    --btn-main-color: #F7F7F7;
-    --btn-main-hover-color: rgba(0,0,0,.1);
+  /* main colors */
+  --main-first-color: #3C43ED;
+  --main-second-color: #ADF1D2;
+  --white-color: #f2f2f2;
 
-    /* text colors */
-    --text-main-color: #2F3238;
-    --text-second-color: #888888;
+  /* buttons color */
+  --btn-main-color: #F7F7F7;
+  --btn-main-hover-color: rgba(0, 0, 0, .1);
 
-    /* font size */
-    --font-size--small: 13px;
-    --font-size--medium: 20px;
-    --font-size--large: 36px;
-    --font-size-x-large: 42px;
+  /* text colors */
+  --text-main-color: #2F3238;
+  --text-second-color: #888888;
 
-    /* border radius */
-    --main-border-radius: 4px;
+  /* font size */
+  --font-size--small: 13px;
+  --font-size--medium: 20px;
+  --font-size--large: 36px;
+  --font-size-x-large: 42px;
 
-      /* font */
-      --header-main-font:'Epilogue', sans-serif;
-      --text-font:'DM Sans', sans-serif;
+  /* border radius */
+  --main-border-radius: 4px;
+
+  /* font */
+  --header-main-font: 'Epilogue', sans-serif;
+  --text-font: 'DM Sans', sans-serif;
 }
 
 /* Start Global Rules */
 .container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Small */
 @media (min-width: 768px) {
-    .container {
-      width: 750px;
-    }
+  .container {
+    width: 750px;
   }
+}
+
 /* Medium */
 @media (min-width: 992px) {
-    .container {
-      width: 970px;
-    }
+  .container {
+    width: 970px;
   }
+}
+
 /* Large */
 @media (min-width: 1200px) {
-    .container {
-      width: 1260px;
-    }
+  .container {
+    width: 1260px;
   }
+}
+
 /* End Global Rules */
 
 
 /* set and reset default values  */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -69,19 +74,35 @@ body {
   font-family: var(--text-font);
   color: var(--text-main-color);
 }
-a,li{
-    text-decoration: none;
-    color: inherit;
-    list-style-type: none;
+
+a,
+li {
+  text-decoration: none;
+  color: inherit;
+  list-style-type: none;
 }
-img{
-    width: 100%;
+
+img {
+  width: 100%;
 }
-h1,h2,h3,h4,h5,h6{
-    font-size: inherit;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+}
+
+h2 {
+  font-family: Epilogue, sans-serif;
+  font-weight: 400;
+  line-height:1.2;
+  color: #222;
+  
 }
 
 /* import website fonts */
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
-
