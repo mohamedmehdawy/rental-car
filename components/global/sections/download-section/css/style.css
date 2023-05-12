@@ -1,0 +1,27 @@
+@import url(../../../../../assets/style/main.css);
+.download-section{
+    background-color:var(--main-second-color);
+    padding: 35px 0 40px 0;
+}
+
+.download-section .download-section-container .section-header{
+    font-size: 30px;
+    font-family: var(--header-main-font);
+    margin-bottom: 5px;
+    padding: 0 15px;
+}
+.download-section .download-section-container .section-description{
+    font-size: 17px;
+    color: #555;
+    padding:15px;
+}
+.download-section .download-section-container .section-image{
+    padding: 15px;
+    width: 331px;
+    margin: auto;
+}
+@media screen and (min-width:768px) {
+    .download-section .download-section-container{
+        display: flex;
+    }
+}
