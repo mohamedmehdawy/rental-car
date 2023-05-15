@@ -1,0 +1,125 @@
+@import url("../../../../../assets/style/main.css");
+.blog-box .blog-box-container{
+    max-width: 400px;
+}
+.blog-box .blog-box-container .blog-box-image{
+    border-radius: 5px;
+    overflow: hidden;
+}
+.blog-box img,a{
+    display: block;
+}
+.blog-box .blog-box-container .box-information{
+    background-color: white;
+    margin: 0 20px;
+    padding: 25px 25px 30px;
+    transform: translateY(-25px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.blog-box .blog-box-container .box-information .box-information-container .lables{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+.blog-box .blog-box-container .box-information .box-information-container .lables .lable{
+    background-color: #e6e6f5;
+    color: var(--main-first-color);
+    padding: 5px 7px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.blog-box .blog-box-container .box-information .box-information-container .box-title{
+    color: #222;
+    font-size: 18px;
+    font-family: var(--header-main-font);
+    margin-bottom: 10px;
+}
+.blog-box .blog-box-container .box-information .box-information-container .box-text .text{
+    color: #888;
+    margin-bottom: 10px ;
+}
+.blog-box .blog-box-container .box-information .box-information-container .box-text .read-more a{
+    color: var(--main-first-color);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.blog-box .blog-box-container .box-information .box-information-container .post-data{
+    display: flex;
+    border-top: 1px solid #e1e1e1;
+    margin-top: 20px;
+    padding: 10px 0 0 0;
+    align-items: center;
+    font-size: 12px;
+    color: #222;
+}
+.blog-box .blog-box-container .box-information .box-information-container .post-data .author{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-right: auto;
+}
+.blog-box .blog-box-container .box-information .box-information-container .post-data .author .avatar{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 5px;
+}
+.blog-box .blog-box-container .box-information .box-information-container .post-data .author .name{
+    color: #222;
+    margin-left: 5px;
+}
+.blog-box .blog-box-container .box-information .box-information-container .post-data .icon{
+    width: 12px;
+}
+.blog-box .blog-box-container .box-information .box-information-container .post-data>div:not(.author) a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.blog-box .blog-box-container .box-information .box-information-container .post-data>div:not(.author):not(.post-date){
+    margin-left: 10px;
+}
+.blog-box .blog-box-container .box-information .box-information-container .post-data .share-button{
+    position: relative;
+}
+.blog-box .blog-box-container .box-information .box-information-container .post-data .share-button:hover  .websites{
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.blog-box .blog-box-container .box-information .box-information-container .post-data .share-button .websites{
+    position: absolute;
+    bottom: calc(100% + 15px);
+    right: -25px;
+    padding: 10px;
+    transition: all .3s linear;
+    border-radius: 4px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+}
+.blog-box .blog-box-container .box-information .box-information-container .post-data .share-button .websites .website a{
+    width: max-content;
+    align-items: center;
+    display: none;
+}
+.blog-box .blog-box-container .box-information .box-information-container .post-data .share-button .websites .website:not(:last-child){
+    margin-bottom: 5px;
+}
+.blog-box .blog-box-container .box-information .box-information-container .post-data .share-button:hover .websites .website a{
+    display: flex;
+}
+/* Resposive  */
+@media screen and (max-width:340px) {
+    .blog-box .blog-box-container .box-information .box-information-container .post-data{
+        flex-wrap: wrap;
+    }
+    .blog-box .blog-box-container .box-information .box-information-container .post-data .author{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+}
